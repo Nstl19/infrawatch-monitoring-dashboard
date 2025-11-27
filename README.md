@@ -11,7 +11,7 @@ https://main.d31cqcsishko0l.amplifyapp.com
 
 ## Project Structure
 
-<img width="600" height="550" alt="cloud-monitoring-structure" src="./structure.png" />
+<img width="500" height="700" alt="cloud-monitoring-structure" src="./structure.png" />
 
 ---
 
