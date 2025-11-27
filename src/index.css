@@ -1,11 +1,10 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* GLOBAL PAGE LAYOUT */
+/* Global Page Layout */
 body {
   background: linear-gradient(
     135deg,
@@ -28,7 +27,7 @@ body {
   min-height: 100vh;
 }
 
-/* Smooth background shifting animation */
+/* Animated Background Movement */
 @keyframes subtleFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
