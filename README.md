@@ -1,4 +1,4 @@
-# ** InfraWatch - Cloud Resource Monitoring Dashboard**
+# **InfraWatch - Cloud Resource Monitoring Dashboard**
 
 A fully serverless cloud monitoring dashboard that displays real-time system metrics (CPU, Disk, Memory) fetched from an AWS Lambda API and rendered through a Vite-powered frontend hosted on AWS Amplify.
 Built for cloud/DevOps learning and demonstration purposes.
