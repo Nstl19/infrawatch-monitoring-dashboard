@@ -117,14 +117,19 @@ function App() {
 }
 
 function Card({ title, value }) {
+  const getColorClass = () => {
+    if (value <= 60) return "value-green";
+    if (value <= 80) return "value-yellow";
+    return "value-red";
+  };
+
   return (
     <div className="card">
-      <h3 style={{ color: "white" }}>{title}</h3>
-      <div className="card-value" style={{ color: "white" }}>
-        {value}%
-      </div>
+      <h3>{title}</h3>
+      <div className={`card-value ${getColorClass()}`}>{value}%</div>
     </div>
   );
 }
+
 
 export default App;
