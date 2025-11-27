@@ -1,0 +1,265 @@
+/* ============================================
+   FONTS
+   ============================================ */
+@font-face {
+  font-family: "Horizon";
+  src: url("/Fonts/Horizon-Font/Horizon-Font/horizon.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   DASHBOARD FRAME
+   ============================================ */
+.dashboard-frame {
+  background: #1f1f1f;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 35px 25px;
+  border-radius: 25px;
+  border: 2px solid #f6ebeb;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s ease;
+  will-change: transform, box-shadow;
+}
+
+.dashboard-frame:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.55);
+}
+
+/* ============================================
+   TITLE
+   ============================================ */
+.dashboard-title {
+  font-family: "Horizon", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 35px;
+  padding-top: 10px;
+  color: white;
+}
+
+/* ============================================
+   TOP METRIC CARDS
+   ============================================ */
+.card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  /* max-width removed - let flex handle it */
+  background: #262626;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #444;
+  text-align: center;
+  color: white;
+}
+
+.card h3 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card-value {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* ============================================
+   CHART GRID
+   ============================================ */
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.chart-box {
+  background: #262626;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #444;
+  color: white;
+  min-width: 0;
+}
+
+.chart-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* ============================================
+   RESPONSIVE: TABLETS (801px - 1024px)
+   ============================================ */
+@media (min-width: 801px) and (max-width: 1024px) {
+  body {
+    padding: 50px;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   RESPONSIVE: TABLETS / SMALL LAPTOPS (460px - 800px)
+   ============================================ */
+@media (min-width: 460px) and (max-width: 800px) {
+  body {
+    padding: 40px;
+  }
+
+  .dashboard-frame {
+    padding: 25px;
+    border-radius: 18px;
+    margin: 20px auto;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    min-width: 100%;
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 0.9rem;
+  }
+
+  .card-value {
+    font-size: 1rem;
+  }
+
+  .chart-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-box {
+    padding: 15px;
+  }
+
+  .chart-box h2 {
+    font-size: 0.9rem;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ============================================
+   RESPONSIVE: MOBILE (360px - 450px)
+   ============================================ */
+@media (min-width: 340px) and (max-width: 450px) {
+  body {
+    padding: 40px;
+  }
+
+  .dashboard-frame {
+    padding: 25px;
+    border-radius: 18px;
+    margin: 20px auto;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .card-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    min-width: 100%;
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 0.9rem;
+  }
+
+  .card-value {
+    font-size: 1rem;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-box {
+    padding: 15px;
+  }
+
+  .chart-box h2 {
+    font-size: 0.9rem;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ============================================
+   RESPONSIVE: VERY SMALL MOBILE (<340px)
+   ============================================ */
+@media (max-width: 339px) {
+  body {
+    padding: 20px;
+  }
+
+  .dashboard-frame {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .dashboard-title {
+    font-size: 1.2rem;
+  }
+
+  .card-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card h3 {
+    font-size: 0.8rem;
+  }
+
+  .card-value {
+    font-size: 0.9rem;
+  }
+}

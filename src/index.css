@@ -1,0 +1,37 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL PAGE LAYOUT */
+body {
+  background: linear-gradient(
+    135deg,
+    #171717,
+    #1b1b1b,
+    #3b3b3b,
+    #636363,
+    #313131,
+    #3b3b3b,
+    #1b1b1b,
+    #171717
+  );
+  background-size: 400% 400%;
+  animation: subtleFlow 10s ease infinite;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Smooth background shifting animation */
+@keyframes subtleFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
