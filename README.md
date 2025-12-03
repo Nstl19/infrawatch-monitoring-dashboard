@@ -17,7 +17,7 @@ https://main.d31cqcsishko0l.amplifyapp.com
 
 ## Tech Used
 
-- **Frontend: Vite, HTML, CSS, JavaScript**
+- **Frontend: Vite, HTML, CSS, React**
 - **Hosting: AWS Amplify**
 - **Backend: AWS Lambda (Node.js 18), API Gateway (HTTP API), CORS enabled**
 - **Architecture: Fully serverless, real-time metric polling**
